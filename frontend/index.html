@@ -13,25 +13,25 @@ Iniciar Sesión solicitando el nombre del usuario y su clave
         <title>login</title>
     </head>
     <body>
-        
+        <p id="resultado" class="mensaje"></p>
         <div class="container">
             <div>
                 <div class="col s12 m6">
                     <div class="card z-depth-5 carta">  
-                        <form >
+                       
                             <div class="card-content center">
                                 <img src="img/saludPath.jpeg" alt="" width="250px"/>
                                 <span class="card-title"><b>INICIAR SESION</b></span>
                                 <div class="row">
                                     <div class="input-field col s12 m12">
                                         <i class="material-icons prefix">account_circle</i>
-                                        <input id="icon_user" type="text" name="txtUsuario"  class="validate">
-                                        <label for="icon_user">Usuario</label>
+                                        <input type="text" name="cedul" id="cedula"  class="validate">
+                                        <label for="icon_user" >Cedula</label>
                                     </div>
                                     <div class="input-field col s12 m12">
                                         <i class="material-icons prefix">lock</i>
-                                        <input id="icon_pass" type="password" name="txtPassword"  class="validate">
-                                        <label for="icon_pass">Password</label>
+                                        <input type="password" name="contrasen" id="contrasena" class="validate">
+                                        <label for="icon_pass">Contraseña</label>
                                     </div>
                                 </div>                                
                             </div>
@@ -48,7 +48,7 @@ Iniciar Sesión solicitando el nombre del usuario y su clave
                                     </div> 
                                 </div>                                                                    
                             </div>
-                        </form>
+                        
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Por el momento no esta disponible
                                 <i class="material-icons right">close</i></span>
@@ -64,7 +64,6 @@ Iniciar Sesión solicitando el nombre del usuario y su clave
                 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
         crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="js/request.js"></script>
         <script src="js/login.js"></script>
     </body>
 </html>

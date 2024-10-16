@@ -43,4 +43,13 @@ body{
     font-weight: 600 !important;
     font-size: 15px !important;
   }
-
+  .mensaje{
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: -11px;
+    font-weight: 500;
+    color: red;
+    transform: translate(-50%);
+    z-index: 1;
+  }
