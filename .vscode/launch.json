@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EpsModelApplication<Modeleps>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "EPS.Modeleps.EpsModelApplication",
+            "projectName": "Modeleps",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
