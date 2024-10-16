@@ -18,7 +18,7 @@ public class Login {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_login;
 
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name="cedula", referencedColumnName = "numero_identificacion")
     private Afiliados cedula;
 
@@ -56,5 +56,13 @@ public class Login {
 
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
+    }
+
+    @Override
+    public String toString() {
+        return "Login{" +
+                "cedula='" + cedula + '\'' +
+                ", contrasena='" + contrasena + '\'' +
+                '}';
     }
 }

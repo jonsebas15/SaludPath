@@ -50,9 +50,27 @@ Iniciar Sesión solicitando el nombre del usuario y su clave
                             </div>
                         
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Por el momento no esta disponible
+                            <span class="card-title grey-text text-darken-4"> CREAR NUEVA CUENTA
                                 <i class="material-icons right">close</i></span>
-                                <button>cerrar</button>
+                                <div class="row">
+                                    <div class="input-field col s12 m12">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input type="text" name="cedul" id="cedulaNueva"  class="validate">
+                                        <label for="icon_user" >Cedula</label>
+                                    </div>
+                                    <div class="input-field col s12 m12">
+                                        <i class="material-icons prefix">lock</i>
+                                        <input type="password" name="contrasen" id="contrasenaNueva" class="validate">
+                                        <label for="icon_pass">Nueva Contraseña</label>
+                                    </div>
+                                    <div class="input-field col s12 m12">
+                                        <i class="material-icons prefix">lock</i>
+                                        <input type="password" name="contrasen" id="contrasenaNueva2" class="validate">
+                                        <label for="icon_pass">Repetir Contraseña</label>
+                                    </div>
+                                </div>
+                                <button type="button" class="waves-effect waves-light btn-large login-btn" onclick="registerLogin()">CREAR CUENTA</button>
+                                <p class="mensajeErrorRegister" id="mensaje2"></p>
                         </div>
                     </div>   
                 </div>                

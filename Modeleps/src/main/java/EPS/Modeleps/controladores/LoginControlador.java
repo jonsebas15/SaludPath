@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 import EPS.Modeleps.modelo.Login;
+import EPS.Modeleps.servicios.LoginResponse;
 import EPS.Modeleps.servicios.LoginServicio;
 import java.util.ArrayList;
 
@@ -21,7 +22,7 @@ import java.util.ArrayList;
 
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500", allowCredentials = "true")
+@CrossOrigin(origins = "*")
 public class LoginControlador {
 
 @Autowired
@@ -73,10 +74,11 @@ public class LoginControlador {
 
 
     @PostMapping("/login/verificar")
-    public ResponseEntity<String> verificarLogin(@RequestBody Login login) {
+    public ResponseEntity<LoginResponse> verificarLogin(@RequestBody Login login) {
         System.out.println("Datos recibidos: " + login);
-        String resultado = loginServicio.verificarLogin(login.getCedula(), login.getContrasena());
-        if (resultado.equals("Login exitoso")) {
+        LoginResponse resultado = loginServicio.verificarLogin(login.getCedula(), login.getContrasena());
+        System.out.println("Datos recibidos: " + resultado);
+        if ("Login exitoso".equals(resultado.getMessage())) {
             return new ResponseEntity<>(resultado, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(resultado, HttpStatus.BAD_REQUEST);

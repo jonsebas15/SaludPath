@@ -36,18 +36,18 @@ public class LoginServicio {
         return 1;
     }
 
-    public String verificarLogin(Afiliados cedula, String contrasena) {
-        Login login = loginRepositorio.findByCedula(cedula); // Asegúrate de tener este método en el repositorio.
+    public LoginResponse verificarLogin(Afiliados cedula, String contrasena) {
+        Login login = loginRepositorio.findByCedula(cedula);
         if (login == null) {
-            return "Usuario no encontrado";
+            return new LoginResponse("Cedula no encontrada ", null, null);
         }
         if (login.getContrasena() == null || login.getContrasena().isEmpty()) {
-            return "Usuario no tiene una contraseña registrada";
+            return new LoginResponse("El usuario no tiene contraseña, registrate", login.getId_login(), login.getCedula());
         }
         if (!login.getContrasena().equals(contrasena)) {
-            return "Contraseña incorrecta";
+            return new LoginResponse("Contrasena equivocada", login.getId_login(), null);
         }
-        return "Login exitoso";
+        return new LoginResponse("Login exitoso", login.getId_login(), null);
     }
 
 }

@@ -167,5 +167,11 @@ public class Afiliados {
     public void setTipo_identificacion(String tipo_identificacion) {
         this.tipo_identificacion = tipo_identificacion;
     }
+    @Override
+    public String toString() {
+        return "cedula {" +
+                "cedula='" + numero_identificacion + 
+                '}';
+    }
 }
 
