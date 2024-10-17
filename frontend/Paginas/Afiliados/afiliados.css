@@ -6,3 +6,7 @@ table thead tr th{
     color: aliceblue !important;
     align-content: center !important;
 }
+
+input{
+    font-weight: 700 !important;
+}

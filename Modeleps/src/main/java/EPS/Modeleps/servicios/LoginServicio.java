@@ -50,4 +50,12 @@ public class LoginServicio {
         return new LoginResponse("Login exitoso", login.getId_login(), login.getCedula());
     }
 
+    public LoginResponse LoginCedula(Afiliados cedula) {
+        Login login = loginRepositorio.findByCedula(cedula);
+        if (login == null) {
+            return new LoginResponse("Cedula no encontrada ", null, null);
+        }
+        return new LoginResponse("cedula encontrada", login.getId_login(), null);
+    }
+
 }

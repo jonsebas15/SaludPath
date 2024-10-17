@@ -84,4 +84,14 @@ public class LoginControlador {
             return new ResponseEntity<>(resultado, HttpStatus.BAD_REQUEST);
         }
     }
+
+    @PostMapping("/login/id")
+    public ResponseEntity<LoginResponse> LoginId(@RequestBody Login login) {
+        LoginResponse resultado = loginServicio.LoginCedula(login.getCedula());
+        if ("cedula encontrada".equals(resultado.getMessage())) {
+            return new ResponseEntity<>(resultado, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(resultado, HttpStatus.BAD_REQUEST);
+        }
+    }
 }
