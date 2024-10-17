@@ -47,7 +47,7 @@ public class LoginServicio {
         if (!login.getContrasena().equals(contrasena)) {
             return new LoginResponse("Contrasena equivocada", login.getId_login(), null);
         }
-        return new LoginResponse("Login exitoso", login.getId_login(), null);
+        return new LoginResponse("Login exitoso", login.getId_login(), login.getCedula());
     }
 
 }

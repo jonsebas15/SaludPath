@@ -47,17 +47,18 @@ public class LoginControlador {
 
     //Modificar
     @PutMapping("/login") 
-    public ResponseEntity<Login> editar(@RequestBody Login login){
+    public ResponseEntity<String> editar(@RequestBody Login login){
+        System.out.println("Datos recibidos2: " + login);
         Login obj = loginServicio.buscarLogin(login.getId_login());
         if(obj != null){
             obj.setCedula(login.getCedula());
             obj.setContrasena(login.getContrasena());
             loginServicio.nuevoLogin(obj);
         }else {
-            return new ResponseEntity<>(obj, HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>("usuario no encontrado error", HttpStatus.INTERNAL_SERVER_ERROR);
         }
         
-        return new ResponseEntity<>(obj, HttpStatus.OK);
+        return new ResponseEntity<>("Cuenta creada", HttpStatus.OK);
     }
     
     //ELiminar
@@ -77,7 +78,6 @@ public class LoginControlador {
     public ResponseEntity<LoginResponse> verificarLogin(@RequestBody Login login) {
         System.out.println("Datos recibidos: " + login);
         LoginResponse resultado = loginServicio.verificarLogin(login.getCedula(), login.getContrasena());
-        System.out.println("Datos recibidos: " + resultado);
         if ("Login exitoso".equals(resultado.getMessage())) {
             return new ResponseEntity<>(resultado, HttpStatus.OK);
         } else {
