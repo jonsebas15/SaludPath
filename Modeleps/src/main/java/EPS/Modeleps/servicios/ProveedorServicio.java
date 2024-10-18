@@ -2,11 +2,15 @@ package EPS.Modeleps.servicios;
 
 import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import EPS.Modeleps.modelo.Proveedor;
 
 import EPS.Modeleps.repositorios.ProveedorRepositorio;
+import jakarta.transaction.Transactional;
 
+@Service
+@Transactional
 public class ProveedorServicio {
     @Autowired
     ProveedorRepositorio proveedorRepositorio;
