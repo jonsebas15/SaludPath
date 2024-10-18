@@ -3,31 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Afiliados</title>
+    <title>Medicos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css"/>
-    <link href="./afiliados.css" rel="stylesheet" type="text/css"/>
+    <link href="./medico.css" rel="stylesheet" type="text/css"/>
 </head>
   <body>
     <div class="container mt-4 shadow-1g p-3 mb-5 bg-body rounded">
-        <button id="crearAfiliado" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalafi">Crear un afiliado</button>
+        <button id="crearAfiliado" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalafi">Crear un medico</button>
 
         <table id="tablaAfiliados" class="table mt-2 table-bordered table-striped">
             <thead>
                 <tr class="text-center" >
                     <th>Id</th>
-                    <th>Nombre</th>
-                    <th>Tipo doc.</th>
-                    <th>Documento</th>
-                    <th>Fecha nacimiento</th>
-                    <th>Sexo</th>
+                    <th>Apellido</th>
+                    <th>Nombres</th>
                     <th>Direccion</th>
                     <th>Telefono</th>
-                    <th>Email</th>
-                    <th>Fecha afiliacion</th>
-                    <th>Plan de salud</th>
-                    <th>Estado afiliacion</th>
+                    <th>Correo</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -41,55 +35,33 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header bg-primary" style="color: #fff;">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo afiliado</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Medico</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="Nombre-name" class="col-form-label">Nombre:</label>
-            <input type="text" class="form-control" id="nombre-name">
+            <label for="apellidos-name" class="col-form-label">Apellidos:</label>
+            <input type="text" class="form-control" id="apellidos-name">
           </div>
           <div class="mb-3">
-            <label for="TipoDoc-name" class="col-form-label">Tipo Documento:</label>
-            <input type="text" class="form-control" id="tipoDoc-name">
-          </div>
-          <div class="mb-3">
-            <label for="Documento-name" class="col-form-label">Documento:</label>
-            <input type="text" class="form-control" id="documento-name">
-          </div>
-          <div class="mb-3">
-            <label for="fechaNacimiento-name" class="col-form-label">fecha de Nacimiento:</label>
-            <input type="text" class="form-control" id="fechaNacimiento-name">
-          </div>
-          <div class="mb-3">
-            <label for="sexo-name" class="col-form-label">sexo:</label>
-            <input type="text" class="form-control" id="sexo-name">
+            <label for="nombres-name" class="col-form-label">Nombres:</label>
+            <input type="text" class="form-control" id="nombres-name">
           </div>
           <div class="mb-3">
             <label for="direccion-name" class="col-form-label">Direccion:</label>
             <input type="text" class="form-control" id="direccion-name">
           </div>
+          
           <div class="mb-3">
             <label for="telefono-name" class="col-form-label">Telefono:</label>
             <input type="text" class="form-control" id="telefono-name">
           </div>
           <div class="mb-3">
-            <label for="email-name" class="col-form-label">Correo:</label>
-            <input type="text" class="form-control" id="email-name">
+            <label for="correo-name" class="col-form-label">Correo:</label>
+            <input type="text" class="form-control" id="correo-name">
           </div>
-          <div class="mb-3">
-            <label for="fechaAfiliacion-name" class="col-form-label">fecha de Afiliacion:</label>
-            <input type="text" class="form-control" id="fechaAfiliacion-name">
-          </div>
-          <div class="mb-3">
-            <label for="planSalud-name" class="col-form-label">Plan de Salud:</label>
-            <input type="text" class="form-control" id="planSalud-name">
-          </div>
-          <div class="mb-3">
-            <label for="EstadoAfiliacion-name" class="col-form-label">EstadoAfiliacion:</label>
-            <input type="text" class="form-control" id="estadoAfiliacion-name">
-          </div>
+          
         
       </div>
       <div class="modal-footer">
@@ -104,6 +76,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
-    <script src="afiliados.js"></script>
+    <script src="medico.js"></script>
   </body>
 </html>
