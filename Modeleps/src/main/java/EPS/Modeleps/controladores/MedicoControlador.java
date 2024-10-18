@@ -28,7 +28,7 @@ public class MedicoControlador {
     }
 
     //buscar por id
-    @GetMapping("/Medico/{id}")
+    @GetMapping("/medico/{id}")
     public Medico buscarPorId(@PathVariable Long id){
         return medicoServicio.buscarMedico(id);
     }
