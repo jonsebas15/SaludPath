@@ -17,7 +17,7 @@ const fechaAfiliacion = document.getElementById('fechaAfiliacion-name')
 const planSalud = document.getElementById('planSalud-name')
 const estadoAfiliacion = document.getElementById('estadoAfiliacion-name')
 
-const CrearAfiliado = document.getElementById('crearAfiliado');
+const crearAfiliado = document.getElementById('crearAfiliado');
 
 let option = ''
 crearAfiliado.addEventListener('click', ()=>{
@@ -164,10 +164,11 @@ formAfiliados.addEventListener('submit', (e)=>{
         .then (res => location.reload())
     }
     if(option == "editar"){
-        fetch(url+idForm,{
+        fetch(url ,{
             method:"PUT",
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify({
+                id_afiliado:idForm,
                 nombre:nombre.value,
                 tipo_identificacion:tipoDoc.value,
                 numero_identificacion:documento.value,
