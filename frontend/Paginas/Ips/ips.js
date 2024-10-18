@@ -7,7 +7,6 @@ const formIps = document.querySelector('form')
 const nombre = document.getElementById('nombre-name')
 const direccion = document.getElementById('direccion-name')
 const telefono = document.getElementById('telefono-name')
-const email = document.getElementById('email-name')
 const Especialidades = document.getElementById('Especialidades-name')
 const HorarioAtencion = document.getElementById('Horario_atencion-name')
 const ContactoReferencia = document.getElementById('Contacto_referencia-name')
@@ -19,7 +18,6 @@ CrearIps.addEventListener('click', ()=>{
     nombre.value=""
     direccion.value=""
     telefono.value=""
-    email.value=""
     Especialidades.value=""
     HorarioAtencion.value=""
     ContactoReferencia.value=""
@@ -34,7 +32,6 @@ const mostrar = (ips) =>{
                             <td>${ips.nombre}</td>
                             <td>${ips.direccion}</td>
                             <td>${ips.telefono}</td>
-                            <td>${ips.email}</td>
                             <td>${ips.especialidades}</td>
                             <td>${ips.horario_atencion}</td>
                             <td>${ips.contacto_referencia}</td>
@@ -86,16 +83,14 @@ on(document, 'click', '.btnEditar', e=>{
     const nombreForm = fila.children[1].innerHTML
     const direccionForm = fila.children[2].innerHTML
     const telefonoForm = fila.children[3].innerHTML
-    const emailForm = fila.children[4].innerHTML
-    const EspecialidadesForm = fila.children[5].innerHTML
-    const HorarioAtencionForm = fila.children[6].innerHTML
-    const ContactoReferenciaForm = fila.children[7].innerHTML
+    const EspecialidadesForm = fila.children[4].innerHTML
+    const HorarioAtencionForm = fila.children[5].innerHTML
+    const ContactoReferenciaForm = fila.children[6].innerHTML
 
 
     nombre.value = nombreForm
     direccion.value = direccionForm
     telefono.value = telefonoForm
-    email.value = emailForm
     Especialidades.value = EspecialidadesForm
     HorarioAtencion.value = HorarioAtencionForm
     ContactoReferencia.value = ContactoReferenciaForm
@@ -113,7 +108,6 @@ formIps.addEventListener('submit', (e)=>{
                 nombre:nombre.value,
                 direccion:direccion.value,
                 telefono:telefono.value,
-                email:email.value,
                 especialidades:Especialidades.value,
                 horario_atencion:HorarioAtencion.value,
                 contacto_referencia:ContactoReferencia.value
@@ -131,7 +125,6 @@ formIps.addEventListener('submit', (e)=>{
                 nombre:nombre.value,
                 direccion:direccion.value,
                 telefono:telefono.value,
-                email:email.value,
                 especialidades:Especialidades.value,
                 horario_atencion:HorarioAtencion.value,
                 contacto_referencia:ContactoReferencia.value
