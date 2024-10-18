@@ -44,7 +44,6 @@ fetch(url)
     .catch(error => console.log(error))
 
 const on = (element, event, selector, handler)=>{
-    console.log("borrado2")
     element.addEventListener(event, e =>{
         if(e.target.closest(selector)){
             handler(e)
@@ -57,32 +56,13 @@ on(document, 'click', '.btnBorrar', e=>{
     const id = fila.firstElementChild.innerHTML
     const cedu = fila.children[3].innerHTML
     
-    alertify.confirm("Seguro que quieres borrar al Provedor?",
+    alertify.confirm("Seguro que quieres borrar al Proveedor?",
         function(){
-            let id_login
-            fetch('http://localhost:9090/login/id', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({cedula:{numero_identificacion:cedu}})
-            })
-            .then(response => response.json())
-            .then(data => {
-                id_login = data.idLogin
-                 fetch('http://localhost:9090/login/'+data.idLogin,{
-                    method:"DELETE"
-                 })
-                 .then(res => res.json())
-                 .then(dat=>{console.log(dat)
-                        fetch(url+'/'+id,{
-                            method:'DELETE'
-                        })
-                        .then(res=>res.json())
-                        .then(()=>location.reload())
-                 })
-           })
-
+                fetch(url+'/'+id,{
+                    method:'DELETE'
+                })
+                .then(res=>res.json())
+                .then(()=>location.reload())
         alertify.success('Borrado');
         },
         function(){
@@ -135,7 +115,7 @@ formAfiliados.addEventListener('submit', (e)=>{
             method:"PUT",
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify({
-                id_afiliado:idForm,
+                id_proveedor:idForm,
                 nombre_proveedor:nombre.value,
                 productos_servicios:tipoDoc.value,
                 contacto_proveedor:documento.value,
