@@ -1,1 +1,21 @@
-<p>pag-encuestas works!</p>
+<div class="comment-section">
+    <h2>Comentarios</h2>
+  
+    <!-- Formulario para agregar un comentario -->
+    <div class="comment-form">
+      <textarea [(ngModel)]="newComment" placeholder="Escribe tu comentario..." rows="4"></textarea>
+      <button (click)="addComment()">Comentar</button>
+    </div>
+  
+    <!-- Lista de comentarios -->
+    <div class="comments-list">
+      <div *ngFor="let comment of comments" class="comment">
+        <div class="comment-details">
+          <div class="avatar"></div>
+          <span class="username">{{ comment.id_afiliado.nombre }}</span><p></p>
+          <span class="date">{{ comment.comentarios }}</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
