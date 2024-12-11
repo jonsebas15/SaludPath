@@ -1,0 +1,91 @@
+<div class="container mt-4 shadow-1g p-3 mb-5 bg-body rounded">
+  <button id="crearAfiliado" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalafi">Crear un afiliado</button>
+        <table id="tablaAfiliados" class="table mt-2 table-bordered table-striped">
+            <thead>
+                <tr class="text-center" >
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Tipo doc.</th>
+                    <th>Documento</th>
+                    <th>Fecha nacimiento</th>
+                    <th>Sexo</th>
+                    <th>Direccion</th>
+                    <th>Telefono</th>
+                    <th>Email</th>
+                    <th>Fecha afiliacion</th>
+                    <th>Plan de salud</th>
+                    <th>Estado afiliacion</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+<div class="modal fade" id="modalafi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary" style="color: #fff;">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo afiliado</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="Nombre-name" class="col-form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre-name">
+          </div>
+          <div class="mb-3">
+            <label for="TipoDoc-name" class="col-form-label">Tipo Documento:</label>
+            <input type="text" class="form-control" id="tipoDoc-name">
+          </div>
+          <div class="mb-3">
+            <label for="Documento-name" class="col-form-label">Documento:</label>
+            <input type="text" class="form-control" id="documento-name">
+          </div>
+          <div class="mb-3">
+            <label for="fechaNacimiento-name" class="col-form-label">fecha de Nacimiento:</label>
+            <input type="text" class="form-control" id="fechaNacimiento-name">
+          </div>
+          <div class="mb-3">
+            <label for="sexo-name" class="col-form-label">sexo:</label>
+            <input type="text" class="form-control" id="sexo-name">
+          </div>
+          <div class="mb-3">
+            <label for="direccion-name" class="col-form-label">Direccion:</label>
+            <input type="text" class="form-control" id="direccion-name">
+          </div>
+          <div class="mb-3">
+            <label for="telefono-name" class="col-form-label">Telefono:</label>
+            <input type="text" class="form-control" id="telefono-name">
+          </div>
+          <div class="mb-3">
+            <label for="email-name" class="col-form-label">Correo:</label>
+            <input type="text" class="form-control" id="email-name">
+          </div>
+          <div class="mb-3">
+            <label for="fechaAfiliacion-name" class="col-form-label">fecha de Afiliacion:</label>
+            <input type="text" class="form-control" id="fechaAfiliacion-name">
+          </div>
+          <div class="mb-3">
+            <label for="planSalud-name" class="col-form-label">Plan de Salud:</label>
+            <input type="text" class="form-control" id="planSalud-name">
+          </div>
+          <div class="mb-3">
+            <label for="EstadoAfiliacion-name" class="col-form-label">EstadoAfiliacion:</label>
+            <input type="text" class="form-control" id="estadoAfiliacion-name">
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </div>
+    </form>
+    </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+
+ 

@@ -1,0 +1,12 @@
+body{
+    background-color: #f7f6f6;
+}
+table thead tr th{
+    background-color: #1a68dd !important;
+    color: rgb(255, 255, 255) !important;
+    align-content: center !important;
+}
+
+input{
+    font-weight: 700 !important;
+}

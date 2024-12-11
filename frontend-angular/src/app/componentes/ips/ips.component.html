@@ -1,0 +1,111 @@
+
+<div class="container mt-4 shadow-1g p-3 mb-5 bg-body rounded">
+  <button
+    id="crearIps"
+    type="button"
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#modalafi"
+  >
+    Crear
+  </button>
+
+  <table id="tablaIps" class="table mt-2 table-bordered table-striped">
+    <thead>
+      <tr class="text-center">
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Direccion</th>
+        <th>Telefono</th>
+        <th>Especialidades</th>
+        <th>Horario atencion</th>
+        <th>Contacto referencia</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div
+    class="modal fade"
+    id="modalafi"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary" style="color: #fff">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Nueva Ips</h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="Nombre-name" class="col-form-label">Nombre:</label>
+              <input type="text" class="form-control" id="nombre-name" />
+            </div>
+            <div class="mb-3">
+              <label for="direccion-name" class="col-form-label"
+                >Direccion:</label
+              >
+              <input type="text" class="form-control" id="direccion-name" />
+            </div>
+            <div class="mb-3">
+              <label for="telefono-name" class="col-form-label"
+                >Telefono:</label
+              >
+              <input type="number" class="form-control" id="telefono-name" />
+            </div>
+            <div class="mb-3">
+              <label for="Especialidades-name" class="col-form-label"
+                >Especialidades:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="Especialidades-name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="Horario_atencion-name" class="col-form-label"
+                >Horario atencion:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="Horario_atencion-name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="Contacto_referencia-name" class="col-form-label"
+                >Contacto referencia:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="Contacto_referencia-name"
+              />
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

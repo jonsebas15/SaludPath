@@ -1,0 +1,13 @@
+<div id="menu" class="container-fluid border-bottom shadow-sm">
+    <div id="nav" class="d-flex flex-row justify-content-end py-2" 
+         style="background-color: #0f79dd;">
+        @for (item of menuItems; track $index) {
+        <a [routerLink]="item.path" routerLinkActive="active" 
+            class="nav-link px-4 mx-2 text-white">
+            <div class="d-flex align-items-center">
+                <span class="menu-item">{{item.title}}</span>
+            </div>
+        </a>
+        }
+    </div>
+</div>

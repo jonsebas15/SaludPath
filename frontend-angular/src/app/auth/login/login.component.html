@@ -1,0 +1,31 @@
+<!-- component -->  
+<div class="">
+    <div class="">
+        <form [formGroup]="loginForm" (ngSubmit)="login()" class="" >
+            <h1 class="">Iniciar Sesión</h1>
+
+            <input 
+                type="text"
+                class=""
+                formControlName="username"
+                placeholder="Username" />
+
+            <input
+                 type="password"
+                 class=""
+                formControlName="password"
+                placeholder="Password" />
+
+            <button type="submit"
+                class=""
+                >Iniciar Sesión</button>
+        </form>
+
+        <div class="">
+            ¿No tienes aún una cuenta?
+            <a class="" href="../auth/register/">
+                <span class="">Registrate</span>
+            </a>.
+        </div>
+    </div>
+</div>
