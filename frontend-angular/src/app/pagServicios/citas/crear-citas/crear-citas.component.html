@@ -1,0 +1,30 @@
+<div class="form-container">
+    <h2>Crear Cita Médica</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="patient-name">Nombre del paciente</label>
+        <input type="text" id="patient-name" name="patient-name" placeholder="Ingresa tu nombre" [(ngModel)]="nombre">
+      </div>
+
+      <div class="form-group">
+        <label for="appointment-date">Fecha de la cita</label>
+        <input type="date" id="appointment-date" name="appointment-date" required [(ngModel)]="fecha">
+      </div>
+
+      <div class="form-group">
+        <label for="reason">Motivo de la cita</label>
+        <select id="reason" name="reason" required [(ngModel)]="especialidad">
+          <option value="consulta-general">Consulta General</option>
+          <option value="control">Control Médico</option>
+          <option value="especialista">Consulta con Especialista</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notas adicionales</label>
+        <textarea id="notes" name="notes" placeholder="Ingresa cualquier detalle adicional..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn" (click)="crearCita()">Crear Cita</button>
+    </form>
+  </div>

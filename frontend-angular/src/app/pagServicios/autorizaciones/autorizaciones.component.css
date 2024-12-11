@@ -1,0 +1,58 @@
+.autorizaciones {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .autorizaciones h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .tabla-autorizaciones {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabla-autorizaciones thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .tabla-autorizaciones th,
+  .tabla-autorizaciones td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .tabla-autorizaciones tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .tabla-autorizaciones tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .estado {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .estado.aceptada {
+    color: white;
+    background-color: #28a745; /* Verde */
+  }
+  
+  .estado.pendiente {
+    color: white;
+    background-color: #d6b53c; /* Amarillo */
+  }
+  

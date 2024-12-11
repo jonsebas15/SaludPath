@@ -1,0 +1,53 @@
+@import "primeicons/primeicons.css";
+
+.historial-medico {
+    position: relative;
+    top: 30px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .info-paciente {
+    margin-bottom: 30px;
+  }
+  
+  .info-paciente h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .info-paciente p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .tabla-historial {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tabla-historial thead {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .tabla-historial th,
+  .tabla-historial td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .tabla-historial tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .tabla-historial tbody tr:hover {
+    background-color: #e0e0e0;
+  }

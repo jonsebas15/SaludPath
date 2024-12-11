@@ -1,0 +1,43 @@
+header nav {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(66, 134, 235);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 40px 0 20px;
+
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    gap: 80px;
+    list-style-type: none;
+
+}
+a{
+    all: unset;
+}
+a:hover {
+    transform: scale(1.1); 
+    color: rgba(21, 20, 95, 0.8);
+    font-weight: 600;
+    cursor: pointer;
+  }
+a:active{
+    transform: scale(1);
+    color: rgba(7, 6, 61, 0.8);
+}

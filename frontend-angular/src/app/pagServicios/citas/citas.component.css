@@ -1,0 +1,69 @@
+.citas-medicas {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .citas-medicas h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .btn-nueva-cita {
+    background-color: #007bff;
+    color: white;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tabla-citas {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabla-citas thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .tabla-citas th,
+  .tabla-citas td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .tabla-citas tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .tabla-citas tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .btn-cancelar {
+    background-color: #dc3545;
+    color: white;
+    font-size: 13px;
+  }
+  
