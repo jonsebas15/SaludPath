@@ -41,3 +41,58 @@ a:active{
     transform: scale(1);
     color: rgba(7, 6, 61, 0.8);
 }
+
+
+.menu-item {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilo del submenú */
+  .profile-menu {
+    position: relative;
+  }
+  
+  .submenu {
+    color: black;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    height: 150px;
+    left: -60px;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .submenu li {
+    padding: 8px;
+    margin-top: 25px;
+  }
+
+  .submenu li:hover {
+    background-color: #ccc;
+  }
+  
+  
+
+  
+  .profile-menu:hover .submenu {
+    display: block;
+  }

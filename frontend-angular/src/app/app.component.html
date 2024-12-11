@@ -4,7 +4,14 @@
       <ul>
         <li>Que es EPS</li>
         <a href="/servicios"><li>Servicios</li></a>
-        <li>Perfil</li>
+          <li class="profile-menu">
+            Perfil
+            <ul class="submenu">
+              <li>{{nombre}}</li>
+              <li (click)="salir()">Salir</li>
+            </ul>
+          </li>
+        
       </ul>
     </nav>
   </header>
