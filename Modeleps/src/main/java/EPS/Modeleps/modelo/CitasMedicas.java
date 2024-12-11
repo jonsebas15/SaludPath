@@ -1,5 +1,6 @@
 package EPS.Modeleps.modelo;
 
+import java.time.LocalTime;
 import java.util.Date;
 
 import jakarta.persistence.Column;

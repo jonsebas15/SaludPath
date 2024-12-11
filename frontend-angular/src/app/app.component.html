@@ -1,45 +1,11 @@
 <header>
-  <nav>
-    <div>logo</div>
-    <ul>
-      <li>uno</li>
-      <li>dos</li>
-      <li>tres</li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <video autoplay loop muted playsinline class="video-banner">
-    <source src="videos/saludPathVideo.mp4" type="video/mp4">
-    Tu navegador no soporta la reproducción de video.
-  </video>
-  <div class="static">
-    <div class="numerosUsers">
-      <div>
-        <div class="usuarios">
-          {{ numUsuarios }}
-        </div>
-        <div class="s">Usuarios</div>
-      </div>
-      <div>
-        <div class="clinicas">
-          {{ numClinicas }}
-        </div>
-        <div class="s">Clinicas</div>
-      </div>
-      <div>
-        <div class="doctores">
-          {{ numDoctores }}
-        </div>
-        <div class="s">Doctores</div>
-      </div>
-    </div>
-    <div class="tituloSaludPath">
-      <h1>saludPATH</h1>
-    </div>
-  </div>
-  
-</main>
-<footer>
-
-</footer>
+    <nav #nav1>
+      <a href="/home"><div>LOGO</div></a>
+      <ul>
+        <li>Que es EPS</li>
+        <a href="/servicios"><li>Servicios</li></a>
+        <li>Perfil</li>
+      </ul>
+    </nav>
+  </header>
+<router-outlet></router-outlet>

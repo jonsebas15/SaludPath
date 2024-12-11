@@ -1,0 +1,34 @@
+<div class="citas-medicas">
+    <!-- Título -->
+    <h2>Gestión de Citas Médicas</h2>
+  
+    <!-- Botón para pedir una nueva cita -->
+    <a href="/servicios/citas/crear"><button class="btn btn-nueva-cita" >Pedir una Cita</button></a>
+  
+    <!-- Tabla de citas -->
+    <table class="tabla-citas">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Especialidad</th>
+          <th>Doctor</th>
+          <th>IPS</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cita; let i = index">
+          <td>{{item.fecha_cita}}</td>
+          <td>{{item.hora_cita}}</td>
+          <td>{{item.especialidad}}</td>
+          <td>{{item.id.nombres}} {{item.id.apellidos}}</td>
+          <td>{{item.id_ips.nombre}}</td>
+          <td>
+            <button class="btn btn-cancelar" (click)="cancelar(i)">Cancelar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

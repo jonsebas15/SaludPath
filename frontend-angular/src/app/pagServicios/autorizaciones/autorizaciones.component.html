@@ -1,0 +1,24 @@
+<div class="autorizaciones">
+    <!-- Título -->
+    <h2>Autorizaciones Médicas</h2>
+  
+    <!-- Tabla de autorizaciones -->
+    <table class="tabla-autorizaciones">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Descripción</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+       <tr *ngFor="let item of auto">
+        <td>{{item.fecha_solicitud}}</td>
+        <td>{{item.motivo_solicitud}}</td>
+        <td [ngClass]="item.estado_autorizado == 'Autorizado' ? 'estado aceptada' : 'estado pendiente'">{{item.estado_autorizado}}</td>
+
+       </tr>
+      </tbody>
+    </table>
+  </div>
+  

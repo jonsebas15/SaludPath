@@ -1,0 +1,59 @@
+@import "primeicons/primeicons.css";
+
+.global{
+    display: flex;
+}
+
+.mover{
+    position: relative;
+top: -60px;
+}
+.parteIz{
+align-content: space-around;
+text-align: center;
+width: 30%;
+height: 100vh;
+border-right: solid 3px #23a9c5;
+background-color: #0e4174;
+color: #fff;
+font-family: "Segoe UI","Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+p{
+    padding-top: 50px;
+    transition: font-size 0.3s ease; /* Hace que el cambio sea suave */
+}
+.aniP:hover {
+    transform: scale(1.1); /* Agranda todo el enlace ligeramente */
+    color: rgba(221, 218, 218, 0.8);
+    font-weight: 500;
+    cursor: pointer;
+  }
+.aniP:active{
+    transform: scale(1);
+    color: rgba(172, 172, 172, 0.8);
+}
+.parteIz p{
+    font-size: 2rem;
+}
+
+  .parteDe{
+    width: 70%;
+  }
+
+  i{
+
+    font-size: 2rem !important;
+  }
+  .deepshadow {
+    font-size: 1.4rem;
+    color: rgb(159, 202, 240);
+    letter-spacing: .7em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c,
+        0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626,
+        0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a,
+        0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414,
+        0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+a {
+    all: unset; /* Elimina todos los estilos por defecto del <a> */
+  }

@@ -1,0 +1,30 @@
+<div class="historial-medico" >
+    <div class="info-paciente">
+      <h2>Historial Médico</h2>
+      <p><strong>Nombre:</strong> {{historialM[0].id_afiliado.nombre}} </p>
+      <p><strong>Identificación:</strong> {{historialM[0].id_afiliado.numero_identificacion}}</p>
+      <p><strong>Fecha de Nacimiento:</strong> {{historialM[0].id_afiliado.fecha_nacimiento}}</p>
+      <p><strong>Teléfono:</strong> {{historialM[0].id_afiliado.telefono}}</p>
+    </div>
+  
+    <table class="tabla-historial" *ngIf="historialM.length > 0;">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Diagnóstico</th>
+          <th>Tratamiento</th>
+          <th>Observaciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let registro of historialM">
+            <td>{{ registro.fecha_registro}}</td>
+            <td>{{ registro.diagnostico}}</td>
+            <td>{{ registro.tratamiento}}</td>
+            <td>{{ registro.notas_medicas}}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+  
